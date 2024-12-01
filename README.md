@@ -8,7 +8,6 @@
 [![Build Status](https://travis-ci.org/cme-pro/mongoose-i18n-extra.svg?branch=master)](https://travis-ci.org/cme-pro/mongoose-i18n-extra)
 [![Code Climate](https://codeclimate.com/github/cme-pro/mongoose-i18n-extra/badges/gpa.svg)](https://codeclimate.com/github/cme-pro/mongoose-i18n-extra)
 
-
 Mongoose schema plugin for multilingual fields, largely inspired by [mongoose-intl](https://github.com/alexsk/mongoose-intl) plugin.
 
 
@@ -19,7 +18,7 @@ This plugin only add a new virtual field `_i18n` with all translations inside, e
 ## Installation
 
 ```sh
-$ npm install mongoose-i18n-extra --save
+$ npm install @chameleon2die4/mongoose-i18n-extra --save
 ```
 
 ## Overview
@@ -181,10 +180,13 @@ But please be careful with some of them like `enum` which may not be relevant fo
 * set language at schema level
 * set language at connection level
 
-## Alternative plugins
+### Alternative plugins
 
 * [mongoose-intl](https://github.com/alexsk/mongoose-intl)
 
+### Credits
+
+This is fork [mongoose-i18n-extra](https://www.npmjs.com/package/@cme-pro/mongoose-i18n)
 
 [npm]: https://img.shields.io/npm/v/mongoose-i18n-extra.svg
 [npm-url]: https://npmjs.com/package/mongoose-i18n-extra

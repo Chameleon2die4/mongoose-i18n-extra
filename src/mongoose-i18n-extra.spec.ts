@@ -6,6 +6,9 @@ import mongooseLeanVirtuals from "mongoose-lean-virtuals";
 const { Schema } = mongoose;
 
 declare global {
+  var __MONGO_URI__: string;
+  var __MONGO_OPTS__: any;
+
   namespace NodeJS {
     interface Global {
       __MONGO_URI__: string;
@@ -14,7 +17,7 @@ declare global {
   }
 }
 
-let sampleId = mongoose.Types.ObjectId().toString();
+let sampleId = new mongoose.Types.ObjectId().toString();
 let Sample: any;
 
 describe("Plugin mongooseI18nExtra", () => {
